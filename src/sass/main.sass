@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic')
+
+$white: #ebebeb
+$main-color: #f8ed6d
+$grey: #c4c4c4
+$dark-grey: #565656
+$red: #f54528
+$bg-color: #d9d9d9
+$black: #181818
+
+*
+  font-family: 'Roboto', sans-serif
+  padding: 0
+  margin: 0
+  transition: all 0.2s
+  a
+    color: inherit
+    &:hover
+      color: $main-color
+      text-decoration: none
+
+h1, h2, h3, h4, h5
+  margin: 0
+  padding: 0
+
+.pdf
+  width: 600px
+  height: 700px
+  display: block
+  margin: 40px auto 0
+
+.title
+  padding-bottom: 5px
+  border-bottom: 5px solid $main-color
+  width: 600px
+  margin-bottom: 20px
+  h5
+    font-size: 11px
+    text-transform: uppercase
+    color: $dark-grey
+    letter-spacing: 0.05em
+  h2
+    color: $black
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 0.07em
+
+.title-white
+  padding-bottom: 5px
+  border-bottom: 5px solid $main-color
+  width: 600px
+  margin-bottom: 50px
+  h5
+    font-size: 11px
+    text-transform: uppercase
+    color: #9c9c9c
+    letter-spacing: 0.05em
+  h2
+    color: $white
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 0.05em
+
+.map
+  width: 100%
+  height: 500px
+  margin: 50px 0 0
+
+.button
+  height: 45px
+  background: $red
+  border-radius: 15px
+  color: $white
+  margin-bottom: 50px
+  font-size: 20px
+  text-transform: uppercase
+  letter-spacing: 0.05em
+  font-weight: 500
+  box-shadow: 0 0 25px rgba(36, 36, 36, 0.4)
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  border: none
+  &:hover
+    background: #f52f10
+  &:focus
+    outline: none
+
+.table-border-top
+  border-top: 1px solid rgba(136, 136, 136, 0.7)
+.table-border-right
+  border-right: 1px solid rgba(136, 136, 136, 0.7)
+.table-border-left
+  border-left: 1px solid rgba(136, 136, 136, 0.7)
+.table-border-bottom
+  border-bottom: 1px solid rgba(136, 136, 136, 0.7)
+
+.main
+  background-image: url("../img/bg-main.png")
+  background-repeat: no-repeat
+  height: 100vh
+
+  .header
+    height: 80px
+    background: rgba(38, 38, 38, 0.8)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .logo
+      margin: 0 60px
+
+    .menu
+      color: $white
+      margin: 0 35px
+      .menu-wrapper
+        display: flex
+        list-style-type: none
+        padding: 0
+        margin: 0
+        .menu-item
+          padding: 0 15px
+          font-size: 12px
+          text-transform: uppercase
+          letter-spacing: 0.04em
+          font-weight: 400
+    .burger
+      display: none
+
+  .main-text-group
+    height: 80vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .main-title
+      color: $white
+      text-transform: uppercase
+      letter-spacing: 0.04em
+      font-size: 48px
+    .main-subtitle
+      color: $main-color
+      text-transform: uppercase
+      letter-spacing: 0.04em
+      font-size: 30px
+      margin: 5px 0
+    .main-text
+      color: $grey
+      font-size: 14px
+    .main-button
+      width: 300px
+      height: 45px
+      background: $red
+      border-radius: 15px
+      color: $white
+      font-size: 20px
+      text-transform: uppercase
+      letter-spacing: 0.04em
+      font-weight: 500
+      margin: 10px 0
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4)
+      &:hover
+        background: #f52f10
+      .main-link
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 300px
+        height: 45px
+        &:hover
+          color: $white
+
+
+.products
+  background-color: $bg-color
+  padding: 80px 0
+  .product-card
+    text-align: center
+    height: 270px
+    .product-img
+      margin: 20px 0 0
+    .product-title
+      font-size: 17px
+      text-transform: uppercase
+      font-weight: 600
+      letter-spacing: 0.05em
+      margin: 15px 0
+      position: absolute
+      width: 100%
+      bottom: 20px
+
+
+.advantages
+  background-image: url("../img/bg-advantage.png")
+  padding: 80px 0
+
+  .advantage
+    text-align: center
+    .icon-adv
+      font-size: 80px
+      color: $main-color
+    .title-adv
+      font-size: 20px
+      text-transform: uppercase
+      letter-spacing: 0.07em
+      font-weight: 600
+      color: $main-color
+    .text-adv
+      margin: 10px 0
+      font-size: 14px
+      font-weight: 500
+      color: $white
+
+
+.standard
+  padding: 80px 0
+  background-color: $bg-color
+  .standard-text
+    font-weight: 500
+
+
+.contacts
+  padding: 80px 0 0
+  background-image: url("../img/bg-request.png")
+  .form
+    display: flex
+    flex-direction: column
+    width: 700px
+    .input
+      margin: 0 0 40px
+      padding: 10px
+      font-size: 16px
+      border-radius: 5px
+      border: none
+      &:focus
+        outline: none
+        box-shadow: 0 0 20px rgba(171, 171, 171, 0.5)
+  .contact
+    text-align: center
+    .icon-contact
+      font-size: 100px
+      color: $main-color
+    .title-contact
+      font-size: 20px
+      text-transform: uppercase
+      letter-spacing: 0.07em
+      font-weight: 600
+      color: $main-color
+    .text-contact
+      margin: 10px 0
+      font-size: 17px
+      text-transform: uppercase
+      font-weight: 500
+      color: $white
+
+
+.footer
+  height: 120px
+  background-color: #2d2d2d
+  margin-top: -5px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .footer-wrapper
+    .logo
+      margin: 5px 0
+    text-align: center
+    margin: 5px 0
+    .footer-text
+      font-size: 11px
+      text-transform: uppercase
+      margin: 0
+      color: $white
+
+
+@media (max-width: 1199.98px)
+  .table-border-top
+    border: none
+  .table-border-right
+    border: none
+  .table-border-left
+    border: none
+  .table-border-bottom
+    border: none
+
+@media (max-width: 991.98px)
+  .contacts
+    .contact
+      .text-contact
+        font-size: 12px
+  .advantages
+    .advantage
+      .icon-adv
+        font-size: 60px
+      .title-adv
+        font-size: 17px
+      .text-adv
+        font-size: 14px
+        font-weight: 400
+@media (max-width: 767.98px)
+  .main
+    .header
+      .logo
+        margin: 0 30px
+      .menu
+        display: none
+        position: absolute
+        top: 80px
+        right: 0
+        margin: 0
+        background: rgba(38,38,38,.8)
+        .menu-wrapper
+          flex-direction: column
+          .menu-item
+            margin: 5px
+            font-size: 14px
+      .burger
+        display: block
+        cursor: pointer
+        font-size: 30px
+        margin: 0 40px
+        color: $white
+    .main-text-group
+      .main-title
+        font-size: 36px
+      .main-subtitle
+        font-size: 24px
+  .title
+    width: 100%
+    margin-bottom: 30px
+  .title-white
+    width: 100%
+    margin-bottom: 30px
+  .pdf
+    width: 100%
+  .contacts
+    .form
+      width: 100%
+    .contact
+      .icon-contact
+        font-size: 60px
+      .title-contact
+        font-size: 16px
+      .text-contact
+        font-size: 9px
+
+@media (max-width: 575.98px)
+  .main
+    .main-text-group
+      .main-title
+        text-align: center
+        font-size: 28px
+      .main-subtitle
+        font-size: 20px
+        text-align: center
+      .main-text
+        font-size: 14px
+        text-align: center
+      .main-button
+        width: 200px
+        height: 35px
+        font-size: 15px
+        margin: 0 auto
+        .main-link
+          width: 200px
+          height: 35px
+
+  .products
+    padding: 40px 0
+    .product-card
+      height: 210px
+      width: 80%
+      margin: 0 auto
+      .product-img
+        width: 70%
+      .product-title
+        font-size: 14px
+  .advantages
+    padding: 40px 0
+  .map
+    margin: 0
+  .pdf
+    height: 400px
+
+  .contacts
+    padding: 30px 0 0
+    .contact
+      .icon-contact
+        font-size: 50px
+      .text-contact
+        font-size: 12px
+
+
+
+
+
+
